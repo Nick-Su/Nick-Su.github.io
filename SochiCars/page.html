@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="ru">
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sochi Cars. Аренда авто в Сочи</title>
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic"
+rel="stylesheet" type="text/css" />
+	<!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/page.css">
+     <!-- Styles for date picker -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  	<link rel="stylesheet" href="/resources/demos/style.css">
+  	<!-- JQuery connection -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Custom scripts -->
+	<script src="js/menu.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/maskedinput.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> <!-- Date picker plugin -->
+</head>
+<body>
+	<div class="content-main">
+	 	<!-- Header -->
+		<div class="top-navbar">
+			<div class="color-wrap">
+				<div class="head-wrap">
+					<div class="head container">
+						<div class="logo">
+							<div class="logo-image">
+								<img src="img/icon-wheel.png" alt="icon-wheel">
+							</div>
+							<div class="description">
+								<h1>SOCHI CARS</h1>
+								<p>Аренда авто в Сочи</p>
+							</div>
+						</div>
+
+						<div class="address">
+							<p> <span><img src="img/map-marker.svg" id="map-marker" alt="map-marker"></span> г. Сочи, ул. Черноморская, 3 </p>
+						</div>
+
+						<div class="phone-number">
+							<h1>8 800 600 50-40</h1>
+							<p>Звонок бесплатный</p>
+						</div>				
+					</div>
+				</div>
+				<!-- Menu list -->
+				<div class="topnav-wrap">
+					<div class="topnav container" id="myTopnav">
+						<a href="#">Аренда авто</a>
+						<a href="#">Условия аренды</a>
+						<a href="#">Полезная информация</a>
+						<a href="#">Сервисы</a>
+						<a href="#">О компании</a>
+						<a href="#"> <img src="img/key.svg" alt="key"> Ваш  Заказ </a>
+						<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Content -->
+		<div class="car-info-wrap container">
+			<!-- Car card -->
+			<div class="block block-1 container">
+				<div class="page-filter">
+					<div class="border container">
+					<div class="brand-option">
+						<form id="filter-options">
+							<select class="select-brand select-style nonglare" name="brand-selection">
+								<option>Hyundai Solaris NEW</option>
+								<option>Hyundai H1</option>
+							</select>
+
+							<input class="date-option select-style nonglare datepicker" type="text" id="datepicker-1">
+
+							<input class="date-option select-style nonglare datepicker" type="text" id="datepicker-2">
+
+							<input type="button" value="РАССЧИТАТЬ" id="calculate-btn" class="calculate nonglare">
+						</form> 
+					</div>
+					<div class="option-desc-wrap">	
+						<p class="add-option">
+							<a id="click-to-add">
+								<img src="img/plus.svg" alt="plus">
+								Добавить дополнительные опции
+							</a>
+						</p>
+					</div>
+
+					<div class="options-wrap">
+						<h4>Опция 1</h4>
+						<h4>Опция 2</h4>
+						<h4>Опция 3</h4>
+					</div>
+
+					<div class="finalprice-wrap">
+							<div class="results-wrap">
+								<h3>ИТОГО:</h3>
+								<h4>Залог:</h4>
+							</div>
+							<div class="orderbtn-wrap">
+								<input type="button" value="ЗАКАЗАТЬ" id="order-car" class="calculate nonglare orderbtn">
+							</div>
+							
+					</div>
+				</div>
+				</div>
+
+				<div class="small-desc">
+					<div class="brand-desc-wrap">
+						<h1>Hyundai Solaris</h1>
+					</div>
+
+					<div class="short-prop-wrap">
+						<div class="prop-wrap"><p>АКПП</p></div>
+						<div class="prop-wrap"><p>2011 год</p></div>
+						<div class="prop-wrap"><p>Седан</p></div>
+					</div>
+				</div>	
+			</div>
+
+			<!-- Additional car images -->
+			<div class="carphoto-wrap container">
+				
+				<div class="img-container">
+					<img src="pic/solaris-1.png" alt="solaris-1">
+					<div class="zoom-wrap"></div>
+				</div>
+
+				<div class="img-container">
+					<img src="pic/solaris-2.png" alt="solaris-2">
+					<div class="zoom-wrap"></div>
+				</div>
+				<div class="img-container">
+					<img src="pic/solaris-3.png" alt="solaris-3">
+					<div class="zoom-wrap"></div>
+				</div>
+
+				<div class="img-container">
+					<img src="pic/solaris-4.png" alt="solaris-4">
+					<div class="zoom-wrap"></div>
+				</div>
+
+			</div>
+
+		
+			<!-- Car info -->
+			<div class="block block-2 container">
+				<div class="rows-wrap">
+					<div class="row-1-wrap">
+						<ul>
+							<li>ХАРАКТЕРИСТИКИ</li>
+							<li>Двигатель: 1.4 л, 107 л.с;</li>
+							<li>Тип КПП: автомат;</li>
+							<li>Тип кузова: седан;</li>
+							<li>Количество дверей: 4;</li>
+							<li>Количество мест: 5;</li>
+							<li>Привод: передний;</li>
+							<li>Расход топлива на 100 км: 9 л;</li>
+							<li>Цвет кузова: белый;</li>
+						</ul>
+					</div>
+					<div class="row-2-wrap">
+						<ul>
+							<li>КОМПЛЕКТАЦИЯ</li>
+							<li>Подушки безопасности;</li>
+							<li>Кондиционер;</li>
+							<li>Аудиосистема CD/MP3;</li>
+							<li>Охранная сигнализация;</li>
+							<li>Центральный замок с ДУ;</li>
+							<li>Электро-стеклоподъемники всех стекол;</li>
+							<li>Регулировка рулевой колонки;</li>
+							<li>Салон: ткань;</li>
+							<li>Тонировка: нет;</li>
+						</ul>
+					</div>
+
+				</div> 
+				<div class="grad-wrap"></div>
+
+			</div>
+
+		</div>
+
+		<!-- Difficult choice -->
+		<div class="diff-choice-wrap">
+			<div class="choice-wrap">
+				<div class="cont-wrap">
+					<div class="choice-desc">
+						<h1>Сложный выбор?</h1>
+						<p>Давайте мы подберем специально</p>
+					</div>
+					<div class="form-wrap">
+						<form>
+							<input type="text" name="client-name" id="name" placeholder="Ваше имя" class="form nonglare">
+						
+							<input type="text" class="form nonglare" id="client-phone" name="phone" placeholder="+7 (___) ___ __-__">
+						</form>
+						<p>Я согласен с условиями <span id="underline">политики конфиденциальности</span><input name="agreement" type="checkbox"/></p>
+					</div>
+					<div class="button-wrap">	
+						<button id="send-button">Отправить <br>заявку</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- See also -->
+		<div class="rent-wrap container">
+			<div class="subhead-title-wrap container">
+				  <span>
+				    Смотрите так же
+				  </span>
+			</div>
+		</div>
+		<!-- Car cards -->
+		<div class="catalog">
+			<div class="product container">
+				<a href="#"> 
+					<div class="product-wrap" id="link-1">
+						<div class="trans-wrap">
+							<div class="type"><p>АКПП</p></div>
+						</div>
+						<div class="car-wrap">
+							<div id="content">
+								<img src="pic/solaris.png" alt="solaris">
+							</div>
+						</div>
+						<div class="brand-wrap">
+							<p>Hyundai<br>Solaris NEW</p>
+						</div>
+						<div class="price-wrap">
+							 <span class="price">4 900 &#8399;</span>
+						</div>
+						<div class="more-info more-11">
+							<p>Подробнее</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="link">
+					<div class="product-wrap" id="link-2">
+						<div class="trans-wrap">
+							<div class="type"><p>АКПП</p></div>
+						</div>
+						<div class="car-wrap">
+							<img src="pic/camry.png" alt="camry">
+						</div>
+						<div class="brand-wrap small">
+							<p>Toyota<br>Camry</p>
+						</div>
+						<div class="price-wrap">
+							 <span class="price">4 900 &#8399;</span>
+						</div>
+
+						<div class="more-info more-12">
+							<p>Подробнее</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="product-wrap" id="link-3">
+						<div class="trans-wrap">
+							<div class="type"><p>АКПП</p></div>
+						</div>
+						<div class="car-wrap">
+							<img src="pic/bmw.png" alt="bmw">
+						</div>
+						<div class="brand-wrap">
+							<p>BMW<br>5 Серии</p>
+						</div>
+						<div class="price-wrap">
+							 <span class="price">4 900 &#8399;</span>
+						</div>
+						<div class="more-info more-13">
+							<p>Подробнее</p>
+						</div>
+					</div>
+				</a>
+
+				<a href="#">
+					<div class="product-wrap" id="link-4">
+						<div class="trans-wrap">
+							<div class="type"><p>АКПП</p></div>
+						</div>
+						<div class="car-wrap">
+							<img src="pic/e-klass.png" alt="e-klass">
+						</div>
+						<div class="brand-wrap mid">
+							<p>Mercedes-Benz<br>E-Класс</p>
+						</div>
+						<div class="price-wrap">
+							 <span class="price">4 900 &#8399;</span>
+						</div>
+						<div class="more-info more-14">
+							<p>Подробнее</p>
+						</div>
+					</div>
+				</a>
+				<div class="clear-all"></div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<div class="footer-wrap">
+			<div class="copyright container">
+				<div class="rentcar">
+					<p>&copy; 2017 Аренда авто в сочи</p>	
+				</div>
+					
+				<div class="clickon">
+					<img src="img/clickon.png" alt="clickon">
+					<a href="#">Создание сайта</a>		
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

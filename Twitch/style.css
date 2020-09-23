@@ -1,0 +1,96 @@
+body {
+  background-color: #092B40 !important;
+}
+
+.btn-wrap {
+  background-color: greys;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#online-wrap {
+  background-color: #4a5e72;
+   border-bottom: 5px solid #4a5e72;
+  cursor: pointer;
+}
+
+#offline-wrap {
+  background-color: #4a5e72;
+   border-bottom: 5px solid #4a5e72;
+  cursor: pointer;
+}
+
+#all-wrap {
+ background-color: #4a5e72;
+   border-bottom: 5px solid #4a5e72;
+  cursor: pointer;
+}
+
+#all-wrap:hover,
+#offline-wrap:hover,
+#online-wrap:hover {
+  background-color: #1dacca;
+  border-color: cyan;
+}
+
+.active {
+  background-color: #1dacca !important;
+  border-color: #25d7fd !important; 
+}
+
+
+.users-wrap {
+  padding: 7px;
+  background-color: #4A5E82;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.logo-wrap {
+  baclground-color: red;
+}
+
+.name-wrap {
+  padding: 10px;
+  background-color: limes
+}
+
+.name-wrap h4 {
+  font-size: 24px;
+}
+
+.status-wrap {
+  background-color: oranges;
+}
+
+img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+span {
+  color: cyan;
+}
+
+a {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+  color: rgba(255, 245, 245, 0.8);
+ 
+}
+
+a:visited {
+  text-decoration: none;
+   color: rgba(0, 0, 0, 0.9);
+}
+
+.twitch-logo {
+  margin-top: 20px;
+  border-radius: 0%;
+  border: 0px;
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: #161616;
+  color: white;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 70px;
+}
+
+h2 {
+  margin-top: 35px;
+  font-size: 35px;
+}
+
+h3 {
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.city, .temp, .desc  {
+  text-align: center;
+}
+
+
+
+img {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#tempUnit {
+  color: #006DCC;
+  cursor: pointer;
+}
+
+#tempUnit:hover {
+  color: #3D6C8E;
+}

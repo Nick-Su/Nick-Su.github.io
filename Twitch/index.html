@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Twitch Streamer Viewer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+	<div class="container-fluid">
+  <div class="col-md-6 col-md-offset-3">
+    <img class="img-responsive twitch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Twitch_logo_%28wordmark_only%29.svg/1200px-Twitch_logo_%28wordmark_only%29.svg.png" alt="twitch logo">
+  </div>
+  
+  <div class="col-md-6 col-md-offset-3 btn-wrap">
+   
+      <div class="col-md-4 active" id="all-wrap">
+         <h3 class="text-center">All</h3>
+      </div>
+  
+    
+    <div class="col-md-4" id="online-wrap">
+      <h3 class="text-center">Online</h3>
+    </div>
+    
+    <div class="col-md-4" id="offline-wrap">
+       <h3 class="text-center">Offline</h3>
+    </div>
+  </div>
+  
+  <!-- Content wrap -->
+  <div class="col-sm-6 col-sm-offset-3 result_wrap"></div>
+
+</div>
+
+</body>
+</html>

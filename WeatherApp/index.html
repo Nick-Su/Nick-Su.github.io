@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Forecast App </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container-fluid jumbotron">
+  
+	  <h1 class="text-center">Weather Forecast App  </h1>
+	  
+	  <div class="city"></div>
+	  
+	  <div class="temp">
+	    <div id="tempValC"></div>
+	    <div id="tempValF"></div>
+	  </div>
+	  
+	  <div class="desc"></div>
+	  
+	  <div class="weather-img"></div>
+	  
+	</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+	
+	var lat, lon;
+var api = "https://fcc-weather-api.glitch.me/api/current?";
+var country = "";
+var temp = "";
+var city = "";
+var img = "";
+var desc = "";
+var tempUnit = "&#8451;";
+
+$(document).ready(function(){
+  
+   $("#tempValF").hide(1);
+
+  // First of all we need get geo coords
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var lat = "lat=" + position.coords.latitude;
+      var lon = "lon=" + position.coords.longitude;
+      // call the func to get weather
+      getWeather(lat, lon);
+    });
+  } else {
+      console.log("Geo location is not supported by this browser");
+  }
+  
+  // func makes a request to get weather forecast
+  function getWeather(lat, lon)
+  {
+    // here we build our request
+    api += lat + "&" + lon;
+    console.log(api);
+    // try to get weather
+    $.getJSON(api, function(json){
+      console.log(json);
+          
+      // Now we generate html code with weather info
+      img += "<img src = '" + json.weather["0"].icon + "' alt='weather' id='pic' class='img-responsive'>";
+      city += "<h2>" + json.name +", "+ json.sys.country + "</h2>";     
+      desc += "<h3>" + json.weather["0"].description + "</h3>";
+      
+      // Here we change html code to show new info
+      $(".weather-img").html(img);
+      $(".city").html(city);
+      $(".desc").html(desc);
+      
+      // get Celcius
+      temp += "<h3 id='winfo'>" 
+              + json.main.temp 
+              + " <span id='tempUnit'>"+ tempUnit +"</span>" 
+              + "</h3>";
+      $("#tempValC").html(temp); // record it
+      
+      // Get fahrenheit
+      tempUnit = "&#8457";
+      var fah = 9/5 * json.main.temp + 32;
+      fah = Math.round(fah * 100) / 100;
+      
+      temp = "<h3 id='winfo'>" 
+              + fah 
+              + " <span id='tempUnit'>"+ tempUnit +"</span>" 
+              + "</h3>";
+      $("#tempValF").html(temp);
+      
+      // Switch between C and F
+      $("#tempValC").click(function () {
+        $("#tempValC").fadeOut(1);
+        
+        $("#tempValF").fadeIn(1);
+      });
+      
+      $("#tempValF").click(function () {
+        $("#tempValF").fadeOut(1);
+        $("#tempValC").fadeIn(1);
+      }); 
+    });
+  } // ends func getWeather;
+});
+
+</script>

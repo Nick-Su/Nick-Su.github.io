@@ -1,0 +1,298 @@
+/* Content */
+.car-info-wrap {
+	height: auto;
+}
+
+.block {
+	height: auto;
+	border: 1px solid #d1d1d1;
+	border-radius: 8px; 
+	background-color: white;
+	box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+.block-1 {
+	margin-top: 45px;
+	background: url('../pic/solaris-full.png') no-repeat;
+	background-position-y: 45%;
+	line-height: 0;
+	height: auto;
+}
+
+.page-filter {
+	position: relative;
+	width: auto;
+	height: auto;
+	vertical-align: bottom;
+	line-height: normal;
+}
+
+.border {
+	width: 100%;
+}
+
+/* Контейнер для нижней панели */
+.small-desc {
+	padding: 22px 0 22px 0;
+	width: 100%;
+	background-color: rgba(59, 68, 91, 0.9);
+    border-radius: 0 0 8px 8px;
+  	vertical-align: bottom;
+  	line-height: normal;
+  	position: relative;
+  	margin-top: 125px;
+}
+
+
+.block-1:before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    content: "";
+}
+
+.small-desc {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.brand-desc-wrap {
+	display: inline-block;
+	background-color: cyans;
+}
+
+.brand-desc-wrap h1 {
+	font-family: 'Open Sans Regular';
+	font-size: 26px;
+	color: #fff;
+	padding-left: 24px;
+}
+
+/* Short prop wrap */
+.short-prop-wrap {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	float: right;
+	padding-top: 5px;
+}
+
+.prop-wrap {
+	background-color: #ffcb00;
+	font-family: 'Open Sans Regular';
+	font-size: 16px;
+	color: #424242;
+	padding: 2px 16px 2px 16px;
+	border-radius: 8px; 
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.order-car-wrap {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	float: right;
+	padding-right: 11px;
+	padding-top: 12px;
+	line-height: normal;
+	color: #3b445b;
+	float: right;
+}
+
+#order-button {
+	padding: 19px 15px 19px 42px; 
+    background: #ffcb00; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+#order-button:hover {
+	background-color: #ffd42c;
+}
+
+#order-button img {
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+	margin-left: -90px;
+	margin-top: 0px;
+}
+#order-button p {
+	font-family: 'Open Sans Bold';
+    font-size: 16px;
+	color: #3b445b;
+}
+
+.carphoto-wrap {
+	height: auto;
+	margin-top: 12px;
+	margin-bottom: 2px;
+	width: 100%;
+	text-align: justify;
+	line-height: 0;
+	font-size: 1px; /* Opera */
+	/* IE6-7*/
+	text-justify: newspaper;
+	zoom:1;	
+	text-align-last: justify;
+}
+
+.carphoto-wrap:after {
+	width: 100%; 
+	height: 0px;
+	visibility: hidden;
+	overflow: hidden;
+	content: '';
+	display: inline-block;
+}
+
+.carphoto-wrap > div {
+	width: 250px;
+	height: 160px;
+	margin-top: 20px;
+	display: inline-block;
+	text-align: left;
+	cursor: pointer;
+	border-radius: 1px solid #d1d1d1;
+	line-height: normal;	
+	/* Opera */
+	vertical-align: top; 	
+	background-size: contain;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*  Zoom */
+.zoom-wrap  {
+	height: 160px;
+	width: 250px;
+	position: absolute;
+	margin-top: -160px;
+	border-radius: 10px;
+	background-color: rgba(59, 68, 91, 0.8);
+	background-image: url("../img/zoom-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	display: none;
+	box-shadow: 5px 0px 29px rgba(0,0,0,0.17);	
+}
+
+.img-container:hover .zoom-wrap {
+	display: block;
+}
+
+/* Car info */
+.block-2 {
+	background: url('../pic/solaris-interior.png') no-repeat;
+	margin-top: 32px;
+	height: auto;
+	padding-top: 49px;
+	padding-bottom: 59px;
+	display: flex;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.block-2 ul {
+	list-style: none;
+	font-family: 'Open Sans Regular';
+	font-size: 18px;
+	color: #d6d7db;
+}
+
+.block-2 ul li:nth-child(2) {
+	padding-top: 32px;
+}
+.block-2 ul li {
+	padding-top: 3px;
+}
+
+.rows-wrap {
+	line-height: 200px;
+    margin: auto;
+}
+
+.row-1-wrap {
+	padding-left: 95px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: normal;
+	margin: 0 auto;
+}
+
+.row-2-wrap {
+	width: auto;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+	line-height: normal;
+	margin-left: 108px;
+}
+
+
+/* Difficult choice */
+.diff-choice-wrap {
+	height: auto;
+	width: 100%;	
+}
+
+.diff-choice-wrap .choice-wrap {
+	margin-top: 43px;
+}
+
+.subhead-title-wrap {
+	max-width: 431px;
+}
+
+.choice-wrap {
+	margin-top: 54px !important;
+}
+
+.rent-wrap {
+	margin-top: 22px  !important; 
+}
+
+.product {
+	margin-top: -20px !important;
+}
+/* Footer */
+.footer-wrap {
+	margin-top: 18px;
+}
+
+
+@media only screen and (max-width: 517px) {
+	.carphoto-wrap {
+		text-align: center;	
+} 
+
+@media only screen and (max-width: 390px) {
+	.subhead-title-wrap span {
+		font-size: 24px;
+	}
+
+	.subhead-title-wrap {
+		height: 17px;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	.carphoto-wrap > div {
+		width: 230px;
+		height: 140px;
+	}
+
+	.zoom-wrap  {
+		width: 230px;
+		height: 140px;
+		margin-top: -140px; 
+	}
+}
