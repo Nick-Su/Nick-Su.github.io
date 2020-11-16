@@ -33,7 +33,6 @@ var allUserURL = [];
   }
 
   function getLogo(allUserURL){
-    console.log("kek");
     for (var i = 0; i < allUserURL.length; i++){
       $.ajax({
       type: 'GET',
@@ -69,6 +68,7 @@ var allUserURL = [];
           url: allURL[i],
           async: false,
           dataType: 'json',
+          beforeSend: function(xhr){xhr.setRequestHeader('Access-Control-Allow-Origin', '*');},
           success: function(data) {
               console.log(data);    
               data.name = streamers_list[i]; 

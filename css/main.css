@@ -209,7 +209,8 @@ body {
 }
 .fcc-icon,
 .github,
-.mail {
+.mail,
+.codepen {
   color: rgba(255,255,255, 0.3);
   margin: 0 10px 0 10px;
 }
@@ -224,6 +225,10 @@ body {
 
 .mail:hover {
 	color: #E31B6D;
+}
+
+.codepen:hover {
+  color: #007BFF;
 }
 
 .copyright {
